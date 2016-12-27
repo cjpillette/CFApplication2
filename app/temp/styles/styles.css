@@ -651,6 +651,7 @@ a {
   font-size: 1.9rem;
   font-weight: 300;
   color: #30546F;
+  margin-top: 0;
 }
 
 @media (min-width: 530px) {
@@ -699,6 +700,10 @@ a {
 
 .headline--b-margin-small {
   margin-bottom: .5em;
+}
+
+.headline--t-margin-small {
+  margin-top: .5em;
 }
 
 .headline--b-margin-large {
@@ -993,6 +998,11 @@ Instead edit gulp/templates/sprite */
       background-image: url('/assets/images/sprites/sprite-0f9283b3.svg');
     }
 
+.icon-top {
+      background-image: url('/assets/images/testimonial-cat.jpg');
+      display: overflow;
+    }
+
 .icon--clear-view-escapes {
     width: 142.4px;
     height: 59.53px;
@@ -1123,6 +1133,7 @@ Instead edit gulp/templates/sprite */
   position: absolute;
   top: 0;
   left: 50%;
+  width: auto;
   -webkit-transform: translateX(-50%) scale(.8);
           transform: translateX(-50%) scale(.8);
   -webkit-transition: -webkit-transform .3s ease-out;
@@ -1132,7 +1143,7 @@ Instead edit gulp/templates/sprite */
   -webkit-transform-origin: 50% 0;
           transform-origin: 50% 0;
   background-color: #30546F;
-  padding: 25px 36px;
+  padding: 36px 36px;
 }
 
 @media (min-width: 800px) {
@@ -1149,9 +1160,9 @@ Instead edit gulp/templates/sprite */
   }
 }
 
-.site-header__logo__graphic {
-  text-indent: -9999px;
-}
+/* &__logo__graphic {
+    text-indent: -9999px;
+  }*/
 
 .site-header__menu-icon {
   width: 20px;
@@ -1228,6 +1239,13 @@ Instead edit gulp/templates/sprite */
 .site-header__menu-icon--close-x::after {
   -webkit-transform: rotate(-45deg) scaleX(1.25) translateY(1px);
           transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+}
+
+.site-header__icon-content {
+  color: #FFF;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 300;
 }
 
 .site-header__menu-content {

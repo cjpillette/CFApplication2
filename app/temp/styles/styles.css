@@ -622,6 +622,14 @@ a {
   }
 }
 
+.page-section--no-t-padding {
+  padding-top: 0;
+}
+
+.page-section--blue-bottom {
+  border-bottom: 10px solid #30546F;
+}
+
 .page-section--no-b-padding-until-medium {
   padding-bottom: 0;
 }
@@ -650,10 +658,15 @@ a {
 }
 
 .page-section--testimonials {
-  background-color: #e0e6ef;/* @mixin atLarge {
-      background: url('/assets/images/large-hero-coding.jpeg') top center no-repeat;
-      background-size: cover;
-    }*/
+  background-color: #e0e6ef;
+}
+
+@media (min-width: 1010px) {
+
+  .page-section--testimonials {
+    background: url('/assets/images/third-section-background-transparent.jpg') top center no-repeat;
+    background-size: cover;
+  }
 }
 
 .headline {
@@ -1143,8 +1156,8 @@ Instead edit gulp/templates/sprite */
   top: 0;
   left: 50%;
   width: auto;
-  -webkit-transform: translateX(-50%) scale(.8);
-          transform: translateX(-50%) scale(.8);
+  -webkit-transform: translateX(-50%) scale(.5);
+          transform: translateX(-50%) scale(.5);
   -webkit-transition: -webkit-transform .3s ease-out;
   transition: -webkit-transform .3s ease-out;
   transition: transform .3s ease-out;

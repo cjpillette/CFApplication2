@@ -9,6 +9,7 @@
   <meta name="description" content="portfolio. life as a developer">
 
   <link rel="stylesheet" href="temp/styles/styles.css">
+  <script src="/temp/scripts/Vendor.js"></script>
 
 </head>
 <body>
@@ -57,7 +58,7 @@
       <h2 class="headline headline--centered headline--light headline--no-b-margin">My beginning as a <strong>web developer</strong>... or</h2>
 
       <div class="wrapper wrapper--medium wrapper--b-margin">
-        <img src="assets/images/chook-confused-hat.png" alt="chook confused looking at magical hat">
+        <img class="lazyload" data-src="assets/images/chook-confused-hat-cropped.png" alt="chook confused looking at magical hat">
         <h3 class="headline headline--centered headline--orange headline--small headline--narrow headline--light headline--t-margin-small">The story of a curious <strong>chick</strong></h3>
         <div class="generic-content-container">
           <p>This is my story, the story of a curious chick who stumbled onto coding by accident. 
@@ -75,12 +76,12 @@
 
   <div id="features" class="page-section page-section--no-t-padding page-section--blue-bottom" data-matching-link="#features-link">
     <div class="wrapper">
-      <h2 class="section-title section-title--blue"> Coderfactory <strong>Bootcamp</strong></h2>
+      <h2 class="section-title section-title--blue section-title--no-b-margin"> Coderfactory <strong>Bootcamp</strong></h2>
 
       <div class="row row--gutters generic-content-container">
           <div class="row__medium-8">
             <div class="feature-item">
-              <img src="assets/images/chook-git-init-sameX.png" alt="egg dipping toe in water">
+              <img class="lazyload" data-src="assets/images/chook-git-init-sameX.png" alt="egg dipping toe in water">
             </div>
           </div>
           <div class="row__medium-4">
@@ -94,7 +95,7 @@
       <div class="row row--gutters generic-content-container">
           <div class="row__medium-8">
             <div class="feature-item">
-              <img src="assets/images/chook-git-add-sameX.png" alt="chook friendship">
+              <img class="lazyload" data-src="assets/images/chook-git-add-sameX.png" alt="chook friendship">
             </div>
           </div> 
           <div class="row__medium-4">
@@ -108,7 +109,7 @@
       <div class="row row--gutters generic-content-container">   
           <div class="row__medium-8">
             <div class="feature-item">
-              <img src="assets/images/chook-git-commit-sameX.png" alt="chook on a gymnastic beam">
+              <img class="lazyload" data-src="assets/images/chook-git-commit-sameX.png" alt="chook on a gymnastic beam">
             </div>
           </div>
           <div class="row__medium-4">
@@ -123,7 +124,7 @@
       <div class="row row--gutters generic-content-container">
           <div class="row__medium-8">
             <div class="feature-item">
-              <img src="assets/images/chook-git-push-sameX.png" alt="chook lifting heavy weights at the gym">
+              <img class="lazyload" data-src="assets/images/chook-git-push-sameX.png" alt="chook lifting heavy weights at the gym">
             </div>
           </div>
           <div class="row__medium-4">
@@ -138,15 +139,16 @@
     </div>
   </div>
 
-  <div id="testimonials" class="page-section page-section--no-b-padding-until-large page-section--testimonials" data-matching-link="#testimonials-link">
-    <div class="wrapper wrapper--no-padding-until-large">
+  <!-- <div id="testimonials" class="page-section page-section--no-b-padding-until-large page-section--testimonials lazyload" data-matching-link="#testimonials-link"> -->
+   <div id="testimonials" class="page-section page-section page-section--no-t-padding page-section-no-b-padding page-section--testimonials lazyload" data-matching-link="#testimonials-link">
+    <div class="wrapper">
       <h2 class="section-title section-title--blue"> Life after <strong>Bootcamp</strong></h2>
 
       <div class="row row--gutters row--equal-height-at-large row--gutters-small row--t-padding-large generic-content-container">
         <div class="row__large-6">
           <div class="testimonial">
             <div class="testimonial__photo">
-              <img src="assets/images/chook-future-1-300px.jpg" alt="Chook giving a presentation">
+              <img class="lazyload" data-src="assets/images/chook-future-1-300px.jpg" alt="Chook giving a presentation">
             </div>
             <h3 class="testimonial__title">Git branch</h3>
             <p class="testimonial__text">When I’m finished with my bootcamp I’m planning on giving back to the coding <strong>community</strong>. I intend to participate in workshops, seminars, talks and conferences. I want to inspire people and share my knowledge with others.</p> 
@@ -158,7 +160,7 @@
         <div class="row__large-6">
           <div class="testimonial testimonial--last">
             <div class="testimonial__photo">
-              <img src="assets/images/chook-future-2-300px.jpg"  alt="Chook flying over the world">
+              <img class="lazyload" data-src="assets/images/chook-future-2-300px.jpg"  alt="Chook flying over the world">
             </div>
             <h3 class="testimonial__title">Git checkout master</h3>
             <p class="testimonial__text">On a more personal note, I’d like to work on exciting projects, mostly oriented towards sustainability and reducing our footprint on our <strong>environment</strong>. 
@@ -168,7 +170,7 @@
         </div>
       </div>
 
-      <h3 class="headline headline--centered headline--light headline--t-padding">So I can't wait for this journey to <strong>continue !</strong></h3>
+      <h3 class="headline headline--centered headline--light headline--t-padding headline--no-b-margin">So I can't wait for this journey to <strong>continue !</strong></h3>
    
 
     </div>

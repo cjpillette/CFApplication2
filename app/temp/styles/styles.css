@@ -429,6 +429,8 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  margin: 0;
+  padding: 0;
 }
 
 * {
@@ -602,6 +604,10 @@ p {
   padding-top: 0;
 }
 
+.page-section--no-b-padding {
+  padding-bottom: 0;
+}
+
 .page-section--blue-bottom {
   border-bottom: 10px solid #30546F;
 }
@@ -639,7 +645,7 @@ p {
 
 @media (min-width: 1010px) {
 
-  .page-section--testimonials {
+  .page-section--testimonials.lazyloaded {
     background: url('/assets/images/third-section-background-transparent.jpg') top center no-repeat;
     background-size: cover;
   }
@@ -701,7 +707,7 @@ p {
 }
 
 .headline--t-padding {
-  padding-top: 2.5rem;
+  padding-top: 3rem;
 }
 
 .headline--b-margin-large {
@@ -884,6 +890,7 @@ p {
 
   .section-title {
     font-size: 3.75rem;
+    padding-top: 1.5rem;
   }
 }
 
@@ -893,6 +900,13 @@ p {
 
 .section-title--blue {
   color: #30546F;
+}
+
+@media (min-width: 530px) {
+
+  .section-title--no-b-margin {
+    margin-bottom: 0;
+  }
 }
 
 .section-title__icon {
@@ -954,7 +968,15 @@ p {
 @media (min-width: 1010px) {
 
   .feature-item__title {
-    padding-top: 2.5rem;
+    padding-top: 4.5rem;
+    margin-top: 7.5rem;
+  }
+}
+
+@media (min-width: 800px) {
+
+  .feature-item__title {
+    padding-top: 4.5rem;
   }
 }
 

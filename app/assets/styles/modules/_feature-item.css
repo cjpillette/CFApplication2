@@ -6,7 +6,11 @@
     padding-left: 94px;
   }
 
-  &__icon {
+  @mixin atMedium {
+    padding-left: 5px;
+  }
+
+  /*&__icon {
     display: block;
     margin: 0 auto;
 
@@ -14,7 +18,7 @@
       position: absolute;
       left: 0;
     }
-  }
+  }*/
 
   &__title {
     font-size: 1.6rem;
@@ -27,6 +31,14 @@
       text-align: left;
       margin-top: 1em;
       font-size: 1.875rem;
+      padding-top: 2.5em;
+    }
+  }
+
+  &__text {
+
+    @mixin atMedium {
+      padding: 1.5rem 1rem 0 0;
     }
   }
 }

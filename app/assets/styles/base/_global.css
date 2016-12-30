@@ -15,3 +15,7 @@ img {
 a {
   color: $mainOrange;
 }
+
+p {
+    text-indent: 50px;
+}

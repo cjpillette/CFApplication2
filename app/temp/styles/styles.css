@@ -439,6 +439,10 @@ a {
   color: #d59541;
 }
 
+p {
+    text-indent: 50px;
+}
+
 .large-hero {
   border-bottom: 10px solid #30546F;
   position: relative;
@@ -523,34 +527,6 @@ a {
 
   .large-hero__description {
     font-size: 1.875rem;
-  }
-}
-
-.btn {
-  background-color: #30546F;
-  color: #FFF;
-  text-decoration: none;
-  padding: .75rem 1.2rem;
-  display: inline-block;
-
-}
-
-.btn--orange {
-  background-color: #d59541;
-}
-
-.btn--red {
-  background-color: #DE2F4E;
-}
-
-.btn--large {
-  padding: 1.1rem 1.9rem;
-}
-
-@media (min-width: 530px) {
-
-  .btn--large {
-    font-size: 1.25rem;
   }
 }
 
@@ -691,10 +667,6 @@ a {
   color: #d59541;
 }
 
-.headline--red {
-  color: #DE2F4E;
-}
-
 .headline--small {
   font-size: 1.2rem;
 }
@@ -728,12 +700,20 @@ a {
   margin-top: .5em;
 }
 
+.headline--t-padding {
+  padding-top: 2.5rem;
+}
+
 .headline--b-margin-large {
   margin-bottom: 1.6em;
 }
 
 .headline--no-t-margin {
   margin-top: 0;
+}
+
+.headline--no-b-margin {
+  margin-bottom: 0;
 }
 
 .row::after {
@@ -744,6 +724,10 @@ a {
 
 .row--t-padding {
   padding-top: 80px;
+}
+
+.row--t-padding-large {
+  padding-top: 160px;
 }
 
 .row--gutters {
@@ -949,16 +933,6 @@ a {
   }
 }
 
-/*&__icon {
-    display: block;
-    margin: 0 auto;
-
-    @mixin atSmall {
-      position: absolute;
-      left: 0;
-    }
-  }*/
-
 .feature-item__title {
   font-size: 1.6rem;
   font-weight: 300;
@@ -973,11 +947,18 @@ a {
     text-align: left;
     margin-top: 1em;
     font-size: 1.875rem;
-    padding-top: 2.5em;
+    text-indent: 50px;
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1010px) {
+
+  .feature-item__title {
+    padding-top: 2.5rem;
+  }
+}
+
+@media (min-width: 1010px) {
 
   .feature-item__text {
     padding: 1.5rem 1rem 0 0;
@@ -987,7 +968,8 @@ a {
 .testimonial {
   background-color: rgba(255, 255, 255, .8);
   padding: 0 18px 1px 18px;
-  margin-bottom: 98px;
+  margin-bottom: 200px;
+
 }
 
 @media (min-width: 1010px) {
@@ -1003,14 +985,14 @@ a {
 }
 
 .testimonial__photo {
-  border-radius: 80px;
+  border-radius: 160px;
   overflow: hidden;
-  width: 160px;
-  height: 160px;
-  margin: 0 auto -80px auto;
+  width: 320px;
+  height: 320px;
+  margin: 0 auto -160px auto;
   position: relative;
-  top: -80px;
-  border: 6px solid rgba(255, 255, 255, .8);
+  top: -160px;
+  border: 6px solid rgba(48,84,111, .8);
 }
 
 .testimonial__title {
@@ -1019,99 +1001,12 @@ a {
   font-size: 1.5rem;
   font-weight: 500;
   margin: 0;
+  padding-top: 1.5rem;
 }
 
-.testimonial__subtitle {
-  color: #d59541;
-  text-align: center;
-  font-weight: 400;
-  font-size: 0.9375rem;
-  margin: .25rem 0 1rem 0;
+.testimonial__text {
+  padding-top: 1.5rem;
 }
-
-/* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
-Instead edit gulp/templates/sprite */
-
-.icon {
-      background-image: url('/assets/images/sprites/sprite-0f9283b3.svg');
-    }
-
-.icon-top {
-      background-image: url('/assets/images/testimonial-cat.jpg');
-      display: overflow;
-    }
-
-.icon--clear-view-escapes {
-    width: 142.4px;
-    height: 59.53px;
-    background-position: 0 0;
-  }
-
-.icon--comment {
-    width: 64px;
-    height: 64px;
-    background-position: 99.70443349753694% 0;
-  }
-
-.icon--facebook {
-    width: 21.23px;
-    height: 42.01px;
-    background-position: 26.040607071652357% 45.795830448496034%;
-  }
-
-.icon--fire {
-    width: 56px;
-    height: 64px;
-    background-position: 0 99.56481481481481%;
-  }
-
-.icon--globe {
-    width: 64px;
-    height: 64px;
-    background-position: 27.586206896551722% 99.56481481481481%;
-  }
-
-.icon--instagram {
-    width: 42.01px;
-    height: 42.01px;
-    background-position: 63.2917018534157% 49.234556504346486%;
-  }
-
-.icon--mail {
-    width: 64px;
-    height: 48px;
-    background-position: 0 48.00806451612903%;
-  }
-
-.icon--rain {
-    width: 64px;
-    height: 64px;
-    background-position: 99.70443349753694% 59.25925925925926%;
-  }
-
-.icon--star {
-    width: 64px;
-    height: 64px;
-    background-position: 59.11330049261084% 99.56481481481481%;
-  }
-
-.icon--twitter {
-    width: 51.78px;
-    height: 42.06px;
-    background-position: 94.04330452560171% 98.50700323226104%;
-  }
-
-.icon--wifi {
-    width: 60px;
-    height: 64px;
-    background-position: 68.79227053140097% 0;
-  }
-
-.icon--youtube {
-    width: 34.75px;
-    height: 42px;
-    background-position: 36.69752421959096% 45.792307692307695%;
-  }
 
 .site-footer {
   background-color: #30546F;
@@ -1172,8 +1067,8 @@ Instead edit gulp/templates/sprite */
   top: 0;
   left: 50%;
   width: auto;
-  -webkit-transform: translateX(-50%) scale(.5);
-          transform: translateX(-50%) scale(.5);
+  -webkit-transform: translateX(-50%) scale(.8);
+          transform: translateX(-50%) scale(.8);
   -webkit-transition: -webkit-transform .3s ease-out;
   transition: -webkit-transform .3s ease-out;
   transition: transform .3s ease-out;
@@ -1197,10 +1092,6 @@ Instead edit gulp/templates/sprite */
             transform: scale(.57);
   }
 }
-
-/* &__logo__graphic {
-    text-indent: -9999px;
-  }*/
 
 .site-header__menu-icon {
   width: 20px;

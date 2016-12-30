@@ -10,34 +10,29 @@
     padding-left: 5px;
   }
 
-  /*&__icon {
-    display: block;
-    margin: 0 auto;
-
-    @mixin atSmall {
-      position: absolute;
-      left: 0;
-    }
-  }*/
-
   &__title {
     font-size: 1.6rem;
     font-weight: 300;
     margin-top: .7em;
     margin-bottom: .8rem;
     text-align: center;
+    
 
     @mixin atSmall {
       text-align: left;
       margin-top: 1em;
       font-size: 1.875rem;
-      padding-top: 2.5em;
+      text-indent: 50px;
+    }
+
+    @mixin atLarge {
+      padding-top: 2.5rem;
     }
   }
 
   &__text {
 
-    @mixin atMedium {
+    @mixin atLarge{
       padding: 1.5rem 1rem 0 0;
     }
   }

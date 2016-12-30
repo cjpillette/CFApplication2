@@ -16,10 +16,6 @@
     color: $mainOrange;
   }
 
-  &--red {
-    color: $mainRed;
-  }
-
   &--small {
     font-size: 1.2rem;
     @mixin atSmall {
@@ -49,11 +45,19 @@
     margin-top: .5em;
   }
 
+  &--t-padding {
+    padding-top: 2.5rem;
+  }
+
   &--b-margin-large {
     margin-bottom: 1.6em;
   }
 
   &--no-t-margin {
     margin-top: 0;
+  }
+
+  &--no-b-margin {
+    margin-bottom: 0;
   }
 }
